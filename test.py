@@ -1,4 +1,8 @@
 import sys
 
-print '1st Command line argument: ', sys.argv[1]
-print '2nd Command line argument: ', sys.argv[2]
+f = open("toSum.txt","a")
+avg = 0.5*(float(sys.argv[1]) + float(sys.argv[2]))
+print avg
+f.write(str(avg) + "\n")
+
+f.close()
